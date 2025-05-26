@@ -47,6 +47,9 @@
 
 
 
+<script src="https://s4.zstatic.net/ajax/libs/gitalk/1.8.0/gitalk.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/gitalk/1.8.0/gitalk.min.css" />
+
 
 
 
@@ -180,14 +183,14 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E5%AE%87%E5%AE%99%E5%AD%A6/" style="color: #00bcd4">
+                <a href="/tags/%E5%AE%87%E5%AE%99%E5%AD%A6/" style="color: #ff7d73">
                     宇宙学
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/%E6%9A%97%E7%89%A9%E8%B4%A8/" style="color: #03a9f4">
+                <a href="/tags/%E6%9A%97%E7%89%A9%E8%B4%A8/" style="color: #ffa2c4">
                     暗物质
                 </a>
             </span>
@@ -201,7 +204,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/CMB/" style="color: #00a596">
+                <a href="/tags/CMB/" style="color: #ffa2c4">
                     CMB
                 </a>
             </span>
@@ -325,6 +328,10 @@
     
     
     
+    <div id="comment">
+        <div id="gitalk-container"></div>
+    </div>
+    
     
     
     
@@ -361,6 +368,22 @@
     <script src="/js/main.js"></script>
     
     
+
+<script>
+    const gitalk = new Gitalk({
+        clientID: "Ov23liF40fTg5gNj7hit",
+        clientSecret: "8f09bccc4aceabfc322a29a24eb6808c7ffccda4",
+        repo: "bingxxccvv.github.io",
+        owner: "bingxxccvv",
+        admin: "bingxxccvv".split(","),
+        language: "zh-CN",
+        id: location.pathname,
+        
+        proxy: "https://cors-anywhere.azm.workers.dev/",
+        
+    })
+    gitalk.render("gitalk-container");
+</script>
 
 
 
