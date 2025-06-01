@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | 冰bling</title>
+    <title>Categories: study_notes | 冰bling</title>
     <meta name="author" content="bing" />
     <meta name="description" content="欢迎来到这里，嘿嘿" />
     <meta name="keywords" content="你好" />
@@ -44,8 +44,6 @@
 <script src="/js/lib/preview.js"></script>
 
 
-
-<script src="/js/lib/search.js"></script>
 
 
 
@@ -157,201 +155,85 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            
-<div id="archives">
+            <div id="archives">
     
-    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
+    <div class="categories-tags">
+        
+        
+        
+        <span>
+            <a href="/categories/study-notes/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                study_notes
+            </a>
+        </span>
+        
+        
+        
+        
+    </div>
     
-    <div id="timeline-wrap" ref="timeline">
-        
-        <div class="timeline" data-title="helloworld">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2025/5/25</div>
-                <a href="/2025/05/25/hello-world/">
-                    <h3>Hello World</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="引力理论前言">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2025/5/26</div>
-                <a href="/2025/05/26/%E5%BC%95%E5%8A%9B%E7%90%86%E8%AE%BA%E5%89%8D%E8%A8%80/">
-                    <h3>引力理论前言</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                    <span class="tags">
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2025/5/27</div>
+            <a href="/2025/05/27/day1/">
+                <h3></h3>
+            </a>
+            <div class="info">
+                
+                <span class="category">
+                    <a href="/categories/study-notes/">
                         <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
                         </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E5%AE%87%E5%AE%99%E5%AD%A6/" style="color: #00a596">
-                                宇宙学
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E6%9A%97%E7%89%A9%E8%B4%A8/" style="color: #ff7d73">
-                                暗物质
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E6%9A%B4%E6%B6%A8/" style="color: #00bcd4">
-                                暴涨
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/CMB/" style="color: #03a9f4">
-                                CMB
-                            </a>
-                        </span>
-                        
+                        study_notes
+                    </a>
+                </span>
+                
+                
+                <span class="tags">
+                    <span class="icon">
+                        <i class="fa-solid fa-tags fa-fw"></i>
                     </span>
                     
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="宇宙学前言">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2025/5/26</div>
-                <a href="/2025/05/26/%E8%AE%B2%E5%BA%A7/">
-                    <h3>宇宙学前言</h3>
-                </a>
-                <div class="info">
                     
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
+                    <span class="tag">
                         
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E5%AE%87%E5%AE%99%E5%AD%A6/" style="color: #03a9f4">
-                                宇宙学
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E6%9A%97%E7%89%A9%E8%B4%A8/" style="color: #ffa2c4">
-                                暗物质
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E6%9A%B4%E6%B6%A8/" style="color: #03a9f4">
-                                暴涨
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/CMB/" style="color: #ffa2c4">
-                                CMB
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2025/5/27</div>
-                <a href="/2025/05/27/day1/">
-                    <h3></h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/study-notes/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            study_notes
+                        <a href="/tags/%E5%AE%87%E5%AE%99%E5%AD%A6/" style="color: #ff7d73">
+                            宇宙学
                         </a>
                     </span>
                     
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
+                    <span class="tag">
                         
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E5%AE%87%E5%AE%99%E5%AD%A6/" style="color: #ff7d73">
-                                宇宙学
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E6%9A%97%E7%89%A9%E8%B4%A8/" style="color: #03a9f4">
-                                暗物质
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E6%9A%B4%E6%B6%A8/" style="color: #00a596">
-                                暴涨
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/CMB/" style="color: #ffa2c4">
-                                CMB
-                            </a>
-                        </span>
-                        
+                        <a href="/tags/%E6%9A%97%E7%89%A9%E8%B4%A8/" style="color: #03a9f4">
+                            暗物质
+                        </a>
                     </span>
                     
-                </div>
+                    <span class="tag">
+                        
+                        <a href="/tags/%E6%9A%B4%E6%B6%A8/" style="color: #00bcd4">
+                            暴涨
+                        </a>
+                    </span>
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/CMB/" style="color: #03a9f4">
+                            CMB
+                        </a>
+                    </span>
+                    
+                </span>
+                
             </div>
         </div>
-        
-        <div class="timeline" data-title="">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2025/5/27</div>
-                <a href="/2025/05/27/%E5%A4%8F%E4%BB%A4%E8%90%A5/">
-                    <h3></h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
     </div>
+    
 </div>
 
             <footer id="footer">
